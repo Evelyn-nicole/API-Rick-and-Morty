@@ -1,0 +1,120 @@
+/* styles.css */
+
+/* Estilos generales para el cuerpo y la superposición semitransparente */
+body {
+  position: relative;
+  background-image: url("./assets/fondo1.png");
+  background-size: cover;
+  background-position: center; 
+  /* min-height: 100vh; */
+  /* margin: 0; */
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+body::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.2); /* Color negro con 20% de opacidad */
+  /* backdrop-filter: blur(3px); Efecto de desenfoque para el fondo */
+}
+
+/* Contenedor principal */
+.container-principal {
+  background-color: rgba(19, 1, 8, 0.679) !important; /* Fondo con 30% de opacidad */
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: cursive;
+  color: rgb(39, 218, 15);
+}
+
+/* estilos navbar */
+.navbar-custom {
+  background-color: #083c49f8 !important; /* Ejemplo de color de fondo para el Navbar */
+  padding: 10px; /* Ajusta el padding según sea necesario */
+  font-family: cursive;
+  color: rgb(39, 218, 15) !important; /* Color de texto para el Navbar */
+}
+.custom-logo {
+  margin-left: 20px; /* Puedes ajustar este valor según lo necesites */
+}
+
+/* estilos footer */
+.footer {
+  background-color:#083c49f8 !important;  /* Ejemplo de color de fondo para el Navbar */
+  padding: 10px; /* Ajusta el padding según sea necesario */
+  font-family: cursive;
+  color: rgb(39, 218, 15) !important; /* Color de texto para el Navbar */
+}
+
+/* Estilo para la barra de búsqueda */
+.search-container {
+  margin-bottom: 20px;
+}
+
+/* Estilo para las tarjetas de personajes */
+.character-card {
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+}
+
+.character-card .card-img-top {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.character-card .card-body {
+  padding: 15px;
+}
+
+.character-card .card-title {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.character-card .card-text {
+  margin-bottom: 5px;
+}
+
+/* Estilos para los detalles del personaje */
+.character-details {
+  margin-top: 20px;
+}
+
+.character-details .card {
+  width: 550px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.character-details .card img {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.character-details .card-body {
+  padding: 15px;
+}
+
+.character-details .card-title {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.character-details .card-text {
+  margin-bottom: 5px;
+}
